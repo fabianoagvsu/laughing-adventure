@@ -1,0 +1,30 @@
+//I don't even know who my partner was, but he didn't talk to me on day 1, and didn't come to class on Monday.
+//It would be an understatement to say I've been only a little mad about it lol.
+#1:
+sed -E 's\"behavior"\"behaviour"\g;s\"honor"\"honour"\g;s\"humor"\"humour"\g;s\"color"\"colour"\' /usr/share/dict/american-english > new_dict
+#2:
+sed -i 's\FOOPS\if\g;s\\BEEPBOOP\/**\g' MyFile.c
+//for this one, I couldn't really understand why I needed to use a pipe, and I couldn't get echo to work with the filename.
+//either way, I think it gets the answer, but with the wrong code. 
+#3:
+sed -E 's\[<script][^</script>]*[</script>]\\g' faculty > faculty.index
+#4:
+sed -n '/define/ p' /usr/include/limits.h > /home/fabianoa/sed_project/clean_limits.h
+//I thought it mattered which way the slashes went, but I guess they work either way.
+#5:
+sed -i.ORIG 's\gattaca\@@GREATMOVIE@@\' dna.txt
+#6:
+sed -f asc.txt /home/woodriir/241/file > decoded
+//It says SUPERSTAR
+#7:
+sed -e :a -e '$q;N;50,$D;ba' /home/woodriir/241/lyrics | tac > ending_lyrics
+#8:
+lscpu | sed -n 's/CPU(s)/p'
+free -h | sed -n 1,2p;sed 's,Gi,G'
+df -h | sed -n '/T/ p'
+#8.2:
+date | sed 's/Fri/Friday,/'
+;sed 's/Feb/February/'
+;sed 's/2021 /2021./'
+;sed 's/AM/a.m./'
+;sed 's/EST/Eastern Standard/'

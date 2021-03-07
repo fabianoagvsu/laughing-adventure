@@ -1,0 +1,7 @@
+sed 's/53/S/g'
+sed 's\55\U\g'
+sed 's\50\P\g'
+sed 's\45\E\g'
+sed 's\52\R\g'
+sed 's\54\T\g'
+sed 's\41\A\g'
