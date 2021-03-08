@@ -31,3 +31,25 @@ chown [] (user)[:group] (file) - changes owner of a file.
 ln -s [] (file) - creates a link between files.
 chgrp [] (group) - changes group of a file.
 
+tar xzf - unpacks tar file.
+ls -a - shows all hidden files.
+ls -l - shows longform name of files.
+ls -la - shows all files in longform.
+ls -A - doesn't show current and higher directory.
+./ - runs a file by the name given.
+make - makes file.
+make () - makes a given file.
+if you install/cp files to a folder that doesn't exist, it will create a directory by the given name.
+
+find (directory) (what to find) - finds the file name given, starting its search at given directory.
+df - display free disk space.
+du - display disk usage.
+more/less - both print out the contents of a file page by page, less has more utility added in as well.
+head/tail - prints out first and last part of a file respectively.
+wc - prints lines, words, and chars. Wordcount.
+sort - sorts based on ascii, but can be commanded to sort by other means, such as alphabetical.
+uniq - prints out the uniq lines and the number each on is found to be duplicate.
+wget/curl - downloads a link from the web, be it an image or block of text.
+rlwrap - runs command, intercepting user input in the mean time.
+uname - prints information about the system and version.
+dialog - helps with text boxes?
