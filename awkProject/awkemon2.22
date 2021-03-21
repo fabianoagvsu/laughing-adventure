@@ -1,0 +1,7 @@
+awk '{SUM0+=$0}END{print SUM0}'
+awk '{SUM1+=$4}END{print SUM1}'
+awk '{SUM2+=$5}END{print SUM2}'
+awk '{SUM3+=$6}END{print SUM3}'
+awk '{SUM4+=$7}END{print SUM4}'
+awk '{SUM5+=$8}END{print SUM5}'
+awk '{SUM6+=$9}END{print SUM6}'

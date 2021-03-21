@@ -1,0 +1,16 @@
+BEGIN{
+	#because i prefer grass types
+	#i have decided to make all
+	#pokemon into grass types only
+	type1 = "Grass"
+	type2 = ""
+}
+
+{
+$2 = type1;
+$3 = type2;
+}
+
+END{
+
+}

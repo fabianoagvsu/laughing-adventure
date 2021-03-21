@@ -1,0 +1,43 @@
+BEGIN {
+	FS"'"
+	#change variable to whichever type searching for
+	type = "Grass"
+	typeCounter = 0
+	typeTotal = 0
+	typeHP = 0
+	typeAttack = 0
+	typeDefense = 0
+	typeSPA = 0
+	typeSPD = 0
+	typeSpeed = 0
+}
+
+{
+if ($2 == type || $3 == type) {
+	++typeCounter;
+	typeTotal+=$4;
+	typeHP+=$5;
+	typeAttack+=$6;
+	typeDefense+=$7;
+	typeSPA+=$8;
+	typeSPD+=$9;
+	typeSpeed+=$10;
+}
+typeTotal/=typeCounter;
+typeHP/=typeCounter;
+typeAttack/=typeCounter;
+typeDefense/=typeCounter;
+typeSPA/=typeCounter;
+typeSPD/=typeCounter;
+typeSpeed/=typeSpeed;
+}
+
+END { 
+	print "Type avg total " typeTotal
+	print "Average HP " typeHP
+	print "Average Attack " typeAttack
+	print "Average Defense " typeDefense
+	print "Average SP Attack " typeSPA
+	print "Average SP Def " typeSPD
+	print "Average Speed " typeSpeed
+}

@@ -1,0 +1,16 @@
+BEGIN {	
+	FS=","
+	total = 0
+	name = ""
+}
+
+{
+if ($5 > total) { 
+  total = $5;
+  name = $1;
+  }
+}
+
+END {
+	print "Strongest Pokemon is " name
+}

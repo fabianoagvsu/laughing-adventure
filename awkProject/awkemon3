@@ -1,0 +1,21 @@
+BEGIN {
+	FS","
+	#change type to whatever type you're searching for
+	type = "Grass"
+	strongestsName = ""
+	strongestsStrength = 0
+}
+
+{
+if ($2 == type || $3 == type) {
+	if ($4 > strongestsStrength) {
+		strongestsStrength = $4;
+		strongestsName = $1;
+	}
+}
+}
+
+END {
+	print "The Strongest Pokemon for type " type
+	print "is " strongestsName
+}

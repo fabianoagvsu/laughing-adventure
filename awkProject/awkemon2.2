@@ -1,0 +1,8 @@
+awk -F ',' '$ == "ID" {sum0 += $0} END {print sum0}' pokemon.csv
+awk -F ',' '$ == "total" {sum1 += $4} END {print sum1}' pokemon.csv
+awk -F ',' '$ == "HP" {sum2 += $5} END {print sum2}' pokemon.csv
+awk -F ',' '$ == "att" {sum3 += $6} END {print sum3}' pokemon.csv
+awk -F ',' '$ == "def" {sum4 += $7} END {print sum4}' pokemon.csv
+awk -F ',' '$ == "spa" {sum5 += $8} END {print sum5}' pokemon.csv
+awk -F ',' '$ == "spd" {sum6 += $9} END {print sum6}' pokemon.csv
+awk -F ',' '$ == "speed" {sum7 += $10} END {print sum7}' pokemon.csv
